@@ -208,4 +208,4 @@ Instagram: @SIIR_PIREX
 ```bash
 sudo aireplay-ng --deauth 0 -a {bssid} {interface}
 ```
- L0 --->  aut all machine  conecte in the wifi
+ L0 --->  out all machine  conecte in the wifi
