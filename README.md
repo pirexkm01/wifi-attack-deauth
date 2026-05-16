@@ -82,15 +82,12 @@ sudo apt install konsole -y
 # Clone Project
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/pirexkm01/wifi-attack-deauth.git
 ```
 
 ---
 
-# Enter Project Directory
 
-```bash
-cd YOUR_REPOSITORY
 ```
 
 ---
