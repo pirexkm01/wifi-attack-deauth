@@ -1,6 +1,17 @@
 # WiFi Audit Script
 
-Simple Bash script for wireless auditing and monitor mode management using Aircrack-ng tools.
+Simple Bash script for wireless auditing and monitor mode management using Aircrack-ng  and attack deauth tools.
+
+---
+
+## Features
+
+- Detect wireless interfaces
+- Enable monitor mode automatically
+- Open scan window with `airodump-ng`
+- Capture packets from selected target
+- Save capture files automatically
+- Multi-terminal support
 
 ---
 
@@ -18,90 +29,188 @@ Simple Bash script for wireless auditing and monitor mode management using Aircr
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
 
-2. Install Aircrack-ng
+Updates system repositories and installed packages.
+
+---
+
+## 2. Install Aircrack-ng
+
+```bash
 sudo apt install aircrack-ng -y
+```
 
 Installs Aircrack-ng tools required for monitor mode and packet capture.
 
-3. Install Wireless Tools
+---
+
+## 3. Install Wireless Tools
+
+```bash
 sudo apt install wireless-tools -y
+```
 
-Installs utilities like iwconfig.
+Installs utilities like `iwconfig`.
 
-4. Install Terminal Package (Optional)
+---
+
+## 4. Install Terminal Package (Optional)
 
 Choose your terminal emulator depending on your desktop environment.
 
-GNOME
+### GNOME
+
+```bash
 sudo apt install gnome-terminal -y
-XFCE
+```
+
+### XFCE
+
+```bash
 sudo apt install xfce4-terminal -y
-KDE
+```
+
+### KDE
+
+```bash
 sudo apt install konsole -y
-Clone Project
+```
+
+---
+
+# Clone Project
+
+```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-Enter Project Directory
+```
+
+---
+
+# Enter Project Directory
+
+```bash
 cd YOUR_REPOSITORY
-Give Execute Permission
+```
+
+---
+
+# Give Execute Permission
+
+```bash
 chmod +x script.sh
-Run Script
+```
+
+---
+
+# Run Script
+
+```bash
 sudo ./script.sh
-Features
-Detect wireless interfaces
-Enable monitor mode
-Open scan window automatically
-Capture packets from selected target
-Save capture files automatically
-Multi-terminal support
-Output
+```
+
+---
+
+# Usage
+
+1. Run the script
+2. Select your wireless interface
+3. Enable monitor mode
+4. Choose target network
+5. Start capture process
+
+---
+
+# Output
 
 Captured files are saved in:
 
+```bash
 ~/Desktop/hack1
+```
 
 Generated files may include:
 
+```text
 .cap
 .csv
 .netxml
-Supported Systems
-Kali Linux
-Parrot OS
-Ubuntu
-Debian
-Troubleshooting
-Interface Not Found
+```
+
+---
+
+# Supported Systems
+
+- Kali Linux
+- Parrot OS
+- Ubuntu
+- Debian
+
+---
+
+# Troubleshooting
+
+## Interface Not Found
 
 Check available interfaces:
 
+```bash
 iwconfig
-Monitor Mode Issues
+```
+
+---
+
+## Monitor Mode Issues
 
 Stop interfering services:
 
+```bash
 sudo airmon-ng check kill
-Permission Denied
+```
+
+---
+
+## Permission Denied
 
 Run the script with sudo:
 
+```bash
 sudo ./script.sh
-Legal Disclaimer
+```
+
+---
+
+# Recommended Adapters
+
+- Alfa AWUS036NHA
+- Alfa AWUS036ACH
+- TP-Link TL-WN722N v1
+
+---
+
+# Legal Disclaimer
 
 This project is intended for:
 
-Educational purposes
-Wireless security research
-Authorized penetration testing
+- Educational purposes
+- Wireless security research
+- Authorized penetration testing
 
 Do not use this project on networks without permission.
 
-Author
+The author is not responsible for misuse.
 
+---
+
+# Author
 
 Instagram: @SIIR_PIREX
- 
-#attack deauth in c
+
+---
+
+# #attack deauth in c
+
+
 sudo aireplay-ng --deauth 0 -a {bssid} {interface}
 
-0 --->  aut all machine  conecte in the wifi
+ L0 --->  aut all machine  conecte in the wifi
